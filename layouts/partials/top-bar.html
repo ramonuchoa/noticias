@@ -1,0 +1,53 @@
+<!-- Top Bar -->
+<div id="top-bar">
+    <div class="container-fullwidth clearfix">
+        <div class="col_half fright col_last nobottommargin">
+            <!-- Top Links -->
+            <div class="top-links">
+                <ul>
+                    <!--
+                    <li>
+                        <a href='#' data-select='lang-menu'>Selecione o idioma</a>
+                        <ul id="langMenu">
+                            <li><a href="/noticias/index.html">Portugu&ecirc;s</a></li>
+                            <li><a href="en/news.html">Ingl&ecirc;s</a></li>
+                            <li><a href="es/noticias.html">Espanhol</a></li>
+                        </ul>
+                    </li>
+                    -->
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                    <li>
+                        <a href="#" id="top-cart-trigger">Entrar</a>
+                        <div id="top-cart">
+                            <div class="top-cart-content">
+                                <form method="post" action="https://v2.afilio.com.br/index.php" id="login-form" name="loginForm">
+                                    <input type="text" name="auth_login" placeholder="Usu&aacute;rio" required>
+                                    <input type="password" id="auth_pass" name="auth_pass" placeholder="Senha" required>
+                                    <select name="auth_type" required>
+                                        <option value='' disabled selected>Tipo</option>
+                                        <option value="aff">Afiliado</option>
+                                        <option value="mer">Anunciante</option>
+                                    </select>
+                                    <input name='rememberme' type="checkbox" id="remember-me" checked><label for='rememberme'>Lembrar senha</label>
+                                    <div>
+                                        <input type="submit" onclick="submitLogin()" value="Enviar" class="btn btn-danger btn-block">
+                                        <input type="hidden" value="ok" name="Ok">
+                                        <input type="hidden" value="afilio" name="from">
+                                        <input type="hidden" value="http://afilio.com.br/login-incorreto" name="url_error">
+                                        <input type="hidden" value="3" name="id_regie">
+                                    </div>
+                                </form>
+                                <a href="https://v2.afilio.com.br/password.php" target='_blank'>Esqueceu a senha&#63;</a>
+                                <a href="cadastro-afiliado.html">Novo cadastro</a>
+                            </div>
+                        </div>
+                        <!-- top-cart end -->
+                    </li>
+                </ul>
+            </div>
+            <!-- top-links end -->
+        </div>
+    </div>
+</div>
+<!-- top-bar end -->

@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="content mainSection newsPage">
+    <div class="contentWrapper">
+        <h1>Not&iacute;cias</h1>
+        <h3>Saiba todas as novidades que a Afilio tem para contar&#33;</h3>
+        <section id='news'>
+            {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "posts") }}
+
+            <div class="postsList">
+                {{ range $paginator.Pages }}
+                {{ .Render "post-list" }}
+                {{ end }}
+            </div>
+
+            {{ partial "pagination.html" . }}
+        </section>
+    </div>
+</section>
+{{ end }}

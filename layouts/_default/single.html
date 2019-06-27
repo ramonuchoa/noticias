@@ -1,0 +1,54 @@
+{{ define "main" }}
+<!-- Not�ciass -->
+<section class="content mainSection postContent">
+    <div class="contentWrapper">
+        <article>
+            <picture class='heroImg'>
+                <img src='{{ $.Site.BaseURL }}images/{{ .Params.image }}' alt='{{ .Title }}' />
+            </picture>
+
+            <h1>{{ .Title }}</h1>
+
+            <h3 class='postDescription'>{{ .Description }}</h3>
+
+            <p class='postInfo'>
+                <i class="fas fa-calendar-alt"></i>
+                {{ dateFormat $.Site.Params.posts.dateFormat .Date }} por {{ $.Params.author }}.
+            </p>
+
+            <section class="postTags">
+                {{ .Render "tags" }}
+            </section>
+
+            {{ .Content }}
+        </article>
+
+        <aside class='relatedPosts' id='relatedPosts'>
+            {{ $related := .Site.RegularPages.Related . | first 2 }}
+            {{ with $related }}
+            <h3>Posts relacionados</h3>
+            <ul class='relatedPostsList'>
+            	{{ range . }}
+            	<li class='relatedPostsListItem'>
+                    <h4>{{ .Title }}</h4>
+                    <p>{{ .Summary }}</p>
+                    <a href="{{ .RelPermalink }}">Leia mais</a>
+                </li>
+            	{{ end }}
+            </ul>
+            {{ end }}
+        </aside>
+
+        <div class="postNavigation">
+            {{ if .NextInSection }}
+            <a href="{{.NextInSection.Permalink}}" class='postNavigationLink'>&lt; Pr&oacute;ximo</a>
+            {{ end }}
+            <a href="{{ $.Site.BaseURL }}" class='postNavigationLink'>Voltar</a>
+            {{ if .PrevInSection }}
+            <a href="{{.PrevInSection.Permalink}}" class='postNavigationLink'>Anterior &gt;</a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!-- Not�ciass End-->
+{{ end }}

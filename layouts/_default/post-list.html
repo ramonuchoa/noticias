@@ -1,0 +1,10 @@
+<div class='postListItem'>
+    <picture>
+        <img src="{{ $.Site.BaseURL }}images/{{ .Params.image }}" alt="post-image">
+    </picture>
+    <div class="postInfo">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Summary }}</p>
+        <a href="{{ .Permalink }}index.html">Leia mais</a>
+    </div>
+</div>

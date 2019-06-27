@@ -1,0 +1,24 @@
+<!-- Header -->
+<header id="header" class="header transparent-header page-section dark sticky-header pageFixed">
+    <div id="header-wrap">
+        <div class="container-fullwidth clearfix">
+            <div id="primary-menu-trigger"><i class="fa fas fa-bars"></i></div>
+            <!-- Logo -->
+            <div id="logo">
+                <a href="../index.html" class="standard-logo" data-dark-logo="{{ $.Site.BaseURL }}images/logo-afilio.png"><img src="{{ $.Site.BaseURL }}images/logo-afilio.png" alt="Logo Afilio"></a>
+                <a href="../index.html" class="retina-logo" data-dark-logo="{{ $.Site.BaseURL }}images/logo-afilio.png"><img src="{{ $.Site.BaseURL }}images/logo-afilio.png" alt="Logo Afilio"></a>
+            </div>
+
+            <div class="search" id="search">
+                <input type="text" placeholder="Pesquisar..." v-model="txt" @keyup="search()" @blur="close()" maxlength="50">
+                <div class="search-results" :style="{'display': showresult?'block':'none'}">
+                    <a v-for="item in result" :href="item.url">{{ printf "{{ item.title }}" }}</a>
+                </div>
+            </div>
+
+            <!-- logo end -->
+            {{ partial "menu.html" . }}
+        </div>
+    </div>
+</header>
+<!-- header end -->
