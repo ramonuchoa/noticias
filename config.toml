@@ -1,9 +1,7 @@
-baseurl = "./"
+baseurl = "https://www.teste.tag.vc/"
 paginate = 6
 summaryLength = 7
 DefaultContentLanguage = "pt"
-
-publishDir = "noticias"
 
 [params.posts]
     showAuthor = true
