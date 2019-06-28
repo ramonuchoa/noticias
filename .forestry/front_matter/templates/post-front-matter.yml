@@ -24,6 +24,8 @@ fields:
   name: tags
   label: tags
 pages:
+- content/posts/nono.html
+- content/posts/setimo.html
 - content/posts/decimo.html
 - content/posts/decimo-quinto.html
 - content/posts/retirei-o-https.html
