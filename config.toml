@@ -3,6 +3,8 @@ paginate = 6
 summaryLength = 7
 DefaultContentLanguage = "pt"
 
+publishDir = "blog"
+
 [params.posts]
     showAuthor = true
     showDate = true
