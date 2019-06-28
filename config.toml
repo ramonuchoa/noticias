@@ -3,7 +3,7 @@ paginate = 6
 summaryLength = 7
 DefaultContentLanguage = "pt"
 
-publishDir = "blog"
+contentDir = "blog"
 
 relativeURLs = true
 
