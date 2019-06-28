@@ -24,6 +24,8 @@ fields:
   name: tags
   label: tags
 pages:
+- content/posts/decimo-terceiro.html
+- content/posts/segundo.html
 - content/posts/nono.html
 - content/posts/setimo.html
 - content/posts/decimo.html
