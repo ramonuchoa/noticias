@@ -1,4 +1,4 @@
-baseurl = "./"
+baseurl = "http://teste.tag.vc"
 paginate = 6
 summaryLength = 7
 DefaultContentLanguage = "pt"
