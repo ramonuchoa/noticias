@@ -1,15 +1,10 @@
-baseurl = "http://teste.tag.vc/"
+baseurl = "./"
 paginate = 6
 summaryLength = 7
 DefaultContentLanguage = "pt"
-
-relativeURLs = true
 
 [params.posts]
     showAuthor = true
     showDate = true
     showTags = true
     dateFormat = "Monday, Jan, 2006"
-
-[permalinks]
-    posts = "/post/:title/"
