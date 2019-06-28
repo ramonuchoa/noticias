@@ -24,4 +24,5 @@ fields:
   name: tags
   label: tags
 pages:
+- content/posts/ajuste-de-url.html
 - content/posts/post-no-bucket.html
