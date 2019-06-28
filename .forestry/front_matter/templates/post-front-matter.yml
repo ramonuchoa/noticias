@@ -24,6 +24,10 @@ fields:
   name: tags
   label: tags
 pages:
+- content/posts/quarto.html
+- content/posts/primeiro.html
+- content/posts/decimo-primeiro.html
+- content/posts/sexto.html
 - content/posts/decimo-quarto.html
 - content/posts/quinto.html
 - content/posts/terceiro.html
