@@ -24,6 +24,7 @@ fields:
   name: tags
   label: tags
 pages:
+- content/posts/oitavo.html
 - content/posts/quarto.html
 - content/posts/primeiro.html
 - content/posts/decimo-primeiro.html
