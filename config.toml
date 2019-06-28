@@ -1,9 +1,11 @@
-baseurl = "http://teste.tag.vc/"
+     baseurl = "http://teste.tag.vc/"
 paginate = 6
 summaryLength = 7
 DefaultContentLanguage = "pt"
 
 publishDir = "blog"
+
+relativeURLs = true
 
 [params.posts]
     showAuthor = true
