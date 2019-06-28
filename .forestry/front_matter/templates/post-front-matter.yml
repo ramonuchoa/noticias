@@ -24,6 +24,7 @@ fields:
   name: tags
   label: tags
 pages:
+- content/posts/permalink.html
 - content/posts/diretório-de-publicação.html
 - content/posts/oitavo.html
 - content/posts/quarto.html
