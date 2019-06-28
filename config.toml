@@ -12,4 +12,4 @@ publishDir = "blog"
     dateFormat = "Monday, Jan, 2006"
 
 [permalinks]
-    posts = "/blog/posts/:title/"
+    posts = "/post/:title/"
