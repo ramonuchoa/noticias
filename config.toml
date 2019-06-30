@@ -8,3 +8,6 @@ DefaultContentLanguage = "pt"
     showDate = true
     showTags = true
     dateFormat = "Monday, Jan, 2006"
+
+[permalinks]
+    posts = "noticas/posts/:title/"
