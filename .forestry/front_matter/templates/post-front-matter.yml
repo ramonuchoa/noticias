@@ -23,26 +23,3 @@ fields:
 - type: list
   name: tags
   label: tags
-pages:
-- content/posts/post-teste.html
-- content/posts/estaticos.html
-- content/posts/permalink.html
-- content/posts/diretório-de-publicação.html
-- content/posts/oitavo.html
-- content/posts/quarto.html
-- content/posts/primeiro.html
-- content/posts/decimo-primeiro.html
-- content/posts/sexto.html
-- content/posts/decimo-quarto.html
-- content/posts/quinto.html
-- content/posts/terceiro.html
-- content/posts/decimo-segundo.html
-- content/posts/decimo-terceiro.html
-- content/posts/segundo.html
-- content/posts/nono.html
-- content/posts/setimo.html
-- content/posts/decimo.html
-- content/posts/decimo-quinto.html
-- content/posts/retirei-o-https.html
-- content/posts/ajuste-de-url.html
-- content/posts/post-no-bucket.html
