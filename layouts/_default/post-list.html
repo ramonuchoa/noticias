@@ -1,6 +1,6 @@
 <div class='postListItem'>
     <picture>
-        <img src="{{ $.Site.BaseURL }}{{ .Params.image }}" alt="post-image">
+        <img src='{{ $.Site.BaseURL }}images/{{ .Params.image }}' alt='{{ .Title }}' />
     </picture>
     <div class="postInfo">
         <h2>{{ .Title }}</h2>
