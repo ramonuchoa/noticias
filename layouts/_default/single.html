@@ -24,9 +24,9 @@
         </article>
 
         <aside class='relatedPosts' id='relatedPosts'>
+            <h3>Posts relacionados</h3>
             {{ $related := .Site.RegularPages.Related . | first 2 }}
             {{ with $related }}
-            <h3>Posts relacionados</h3>
             <ul class='relatedPostsList'>
             	{{ range . }}
             	<li class='relatedPostsListItem'>
@@ -36,6 +36,8 @@
                 </li>
             	{{ end }}
             </ul>
+            {{ else }}
+            <p>Nenhum post relacionado</p>
             {{ end }}
         </aside>
 
