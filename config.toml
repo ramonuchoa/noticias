@@ -3,6 +3,8 @@ paginate = 6
 summaryLength = 7
 DefaultContentLanguage = "pt"
 
+title = "Notícias"
+
 [params.posts]
     showAuthor = true
     showDate = true

@@ -13,9 +13,10 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ with $.Page.Title }} {{ $.Page.Title }} {{ else }} Not&iacute;cias {{ end }} | Afilio</title>
+    <title>{{ $.Page.Title }} | Afilio</title>
     <link rel="icon" href="http://teste.tag.vc/images/icons/favicon.png" />
-    <meta name="description" content="Saiba das novidades que a Afilio tem para contar!" />
+
+    <meta name="description" content="{{ with $.Page.Description }} {{ $.Page.Description }} {{ else }} Saiba das novidades que a Afilio tem para contar! {{ end }}" />
 
     <!-- Google Search Console Tag -->
     <meta name="google-site-verification" content="RFbMxCgSA40A4I3STD6qIRnjYbfpRuarfUvLVkK1qOo" />
