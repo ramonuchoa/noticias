@@ -4,7 +4,7 @@
     <div class="contentWrapper">
         <article>
             <picture class='heroImg'>
-                <img src='{{ $.Site.BaseURL }}images/{{ .Params.image }}' alt='{{ .Title }}' />
+                <img src='{{ $.Site.BaseURL }}images{{ .Params.image }}' alt='{{ .Title }}' />
             </picture>
 
             <h1>{{ .Title }}</h1>
