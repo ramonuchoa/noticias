@@ -1,4 +1,4 @@
-baseurl = "https://afilio.com.br/noticias/"
+baseurl = "https://www.afilio.com.br/noticias/"
 paginate = 6
 summaryLength = 7
 DefaultContentLanguage = "pt"
