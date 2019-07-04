@@ -1,6 +1,4 @@
 {{ range .Params.Tags }}
 {{ $url := printf "%stags/%s/" $.Site.BaseURL . }}
-    <a href="{{ $url }}" class="postTag" alt="{{ . }}.">
         #{{ . }}
-    </a>
 {{ end }}
