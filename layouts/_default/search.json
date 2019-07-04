@@ -15,7 +15,7 @@
     {{- $content := (trim $content " ") }}
     {{- $words := (split $content " ") -}}
     {
-    "url": "{{ .Permalink }}",
+    "url": "{{ .Permalink }}index.html",
     "title": "{{ .Title }}",
     "content": "{{- range $words -}}
     {{- $word := (.) -}}

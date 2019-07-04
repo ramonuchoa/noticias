@@ -40,7 +40,7 @@
             	<li class='relatedPostsListItem'>
                     <h4>{{ .Title }}</h4>
                     <p>{{ .Summary }}</p>
-                    <a href="{{ .RelPermalink }}">Leia mais</a>
+                    <a href="{{ .RelPermalink }}index.html">Leia mais</a>
                 </li>
             	{{ end }}
             </ul>
@@ -51,11 +51,11 @@
 
         <div class="postNavigation">
             {{ if .NextInSection }}
-            <a href="{{.NextInSection.Permalink}}" class='postNavigationLink'>&lt; Pr&oacute;ximo</a>
+            <a href="{{.NextInSection.Permalink}}index.html" class='postNavigationLink'>&lt; Pr&oacute;ximo</a>
             {{ end }}
-            <a href="{{ $.Site.BaseURL }}" class='postNavigationLink'>Voltar</a>
+            <a href="{{ $.Site.BaseURL }}index.html" class='postNavigationLink'>Voltar</a>
             {{ if .PrevInSection }}
-            <a href="{{.PrevInSection.Permalink}}" class='postNavigationLink'>Anterior &gt;</a>
+            <a href="{{.PrevInSection.Permalink}}index.html" class='postNavigationLink'>Anterior &gt;</a>
             {{ end }}
         </div>
     </div>
