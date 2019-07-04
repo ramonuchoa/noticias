@@ -1,9 +1,15 @@
 <div class='postListItem'>
     <picture>
-        <img src='{{ $.Site.BaseURL }}images{{ .Params.image }}' alt='{{ .Title }}' />
+        <a href="{{ .Permalink }}">
+            <img src='{{ $.Site.BaseURL }}images{{ .Params.image }}' alt='{{ .Title }}' />
+        </a>
     </picture>
     <div class="postInfo">
         <h2>{{ .Title }}</h2>
+        <p class='postInfo'>
+            <i class="fas fa-calendar-alt"></i>
+            {{ dateFormat $.Site.Params.posts.dateFormat .Date }} por {{ $.Params.author }}.
+        </p>
         <p>{{ .Summary }}</p>
         <a href="{{ .Permalink }}">Leia mais</a>
     </div>
