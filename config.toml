@@ -9,4 +9,4 @@ title = "Notícias"
     showAuthor = true
     showDate = true
     showTags = true
-    dateFormat = "Monday, Jan, 2006"
+    dateFormat = "02/01/2006"
