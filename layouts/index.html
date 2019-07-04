@@ -1,4 +1,10 @@
 {{ define "main" }}
+<div class="search" id="search">
+    <input type="text" placeholder="Pesquisar..." v-model="txt" @keyup="search()" @blur="close()" maxlength="50">
+    <div class="search-results" :style="{'display': showresult?'block':'none'}">
+        <a v-for="item in result" :href="item.url">{{ printf "{{ item.title }}" }}</a>
+    </div>
+</div>
 <section class="content mainSection newsPage">
     <div class="contentWrapper">
         <h1>Not&iacute;cias</h1>

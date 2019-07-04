@@ -9,13 +9,6 @@
                 <a href="http://teste.tag.vc/" class="retina-logo" data-dark-logo="http://teste.tag.vc/images/logo-afilio.png"><img src="http://teste.tag.vc/images/logo-afilio.png" alt="Logo Afilio"></a>
             </div>
 
-            <div class="search" id="search">
-                <input type="text" placeholder="Pesquisar..." v-model="txt" @keyup="search()" @blur="close()" maxlength="50">
-                <div class="search-results" :style="{'display': showresult?'block':'none'}">
-                    <a v-for="item in result" :href="item.url">{{ printf "{{ item.title }}" }}</a>
-                </div>
-            </div>
-
             <!-- logo end -->
             {{ partial "menu.html" . }}
         </div>
