@@ -1,4 +1,4 @@
-baseurl = "http://teste.tag.vc/noticias/"
+baseurl = "https://afilio.com.br/noticias/"
 paginate = 6
 summaryLength = 7
 DefaultContentLanguage = "pt"
