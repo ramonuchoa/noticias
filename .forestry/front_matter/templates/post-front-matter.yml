@@ -27,4 +27,5 @@ fields:
   name: tags
   label: tags
 pages:
+- content/posts/video.html
 - content/posts/o-que-é-cpm-cpc-e-cpa.html
