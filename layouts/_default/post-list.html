@@ -6,11 +6,10 @@
     </picture>
     <div class="postInfo">
         <h2>{{ .Title }}</h2>
-        <p class='postInfo'>
-            <i class="fas fa-calendar-alt"></i>
-            {{ dateFormat $.Site.Params.posts.dateFormat .Date }} por {{ $.Params.author }}.
+        <p class='publishDate'>
+            {{ dateFormat $.Site.Params.posts.dateFormat .Date }}
         </p>
-        <p>{{ .Summary }}</p>
+        <p class="postSummary">{{ .Summary }}</p>
         <a href="{{ .Permalink }}index.html">Leia mais</a>
     </div>
 </div>
