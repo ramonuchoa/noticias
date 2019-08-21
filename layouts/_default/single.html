@@ -9,27 +9,27 @@
 <section class="content mainSection postContent">
     <div class="contentWrapper">
         <article>
-            <picture class='heroImg'>
-                <img src='{{ $.Site.BaseURL }}images{{ .Params.image }}' alt='{{ .Title }}' />
-            </picture>
-
             <div class='postContentWrapper'>
                 <h1>{{ .Title }}</h1>
 
                 <h3 class='postDescription'>{{ .Description }}</h3>
 
-                <p class='postInfo'>
-                    <i class="fas fa-calendar-alt"></i>
-                    {{ dateFormat $.Site.Params.posts.dateFormat .Date }} por {{ $.Params.author }}.
+                <p class='publishDate'>
+                    {{ dateFormat $.Site.Params.posts.dateFormat .Date }}
                 </p>
 
                 <section class="postTags">
                     {{ .Render "tags" }}
                 </section>
 
+                <picture class='heroImg'>
+                    <img src='{{ $.Site.BaseURL }}images{{ .Params.image }}' alt='{{ .Title }}' />
+                </picture>
+
                 {{ .Content }}
             </div>
         </article>
+
 
         <aside class='relatedPosts' id='relatedPosts'>
             <h3>Posts relacionados</h3>
@@ -47,6 +47,11 @@
             {{ else }}
             <p>Nenhum post relacionado</p>
             {{ end }}
+            <section class="ctaCadastro">
+                <h3>Afilie-se agora</h3>
+                <p>Fa&ccedil;a parte da maior rede de afilia&ccedil;&atilde;o da am&eacute;rica latina.</p>
+                <a href="{{ $.Site.Params.assetsUrl }}cadastro-afiliado.html">Cadastre-se agora</a>
+            </section>
         </aside>
 
         <div class="postNavigation">

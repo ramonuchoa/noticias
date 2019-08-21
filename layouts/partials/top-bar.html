@@ -8,13 +8,13 @@
                     <li>
                         <a href='#' data-select='lang-menu'>Selecione o idioma</a>
                         <ul id="langMenu">
-                            <li><a href="https://www.afilio.com.br/noticias/index.html">Portugu&ecirc;s</a></li>
-                            <li><a href="https://www.afilio.com.br/noticias/index.html">Ingl&ecirc;s</a></li>
-                            <li><a href="https://www.afilio.com.br/noticias/index.html">Espanhol</a></li>
+                            <li><a href="{{ $.Site.BaseURL }}index.html">Portugu&ecirc;s</a></li>
+                            <li><a href="{{ $.Site.BaseURL }}index.html">Ingl&ecirc;s</a></li>
+                            <li><a href="{{ $.Site.BaseURL }}index.html">Espanhol</a></li>
                         </ul>
                     </li>
-                    <li><a href="https://www.afilio.com.br/faq.html">FAQ</a></li>
-                    <li><a href="https://www.afilio.com.br/contato.html">Contato</a></li>
+                    <li><a href="{{ .Site.Params.assetsUrl }}faq.html">FAQ</a></li>
+                    <li><a href="{{ .Site.Params.assetsUrl }}contato.html">Contato</a></li>
                     <li>
                         <a href="#" id="top-cart-trigger">Entrar</a>
                         <div id="top-cart">
@@ -37,7 +37,7 @@
                                     </div>
                                 </form>
                                 <a href="https://v2.afilio.com.br/password.php" target='_blank'>Esqueceu a senha&#63;</a>
-                                <a href="https://www.afilio.com.br/cadastro-afiliado.html">Novo cadastro</a>
+                                <a href="{{ .Site.Params.assetsUrl }}cadastro-afiliado.html">Novo cadastro</a>
                             </div>
                         </div>
                         <!-- top-cart end -->
