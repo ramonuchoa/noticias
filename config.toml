@@ -1,11 +1,11 @@
-baseurl = "https://afilio.com.br/noticias/"
+baseurl = "https://www.afilio.com.br/noticias/"
 paginate = 12
 summaryLength = 7
 DefaultContentLanguage = "pt"
 title = "Notícias"
 
 [params]
-    assetsUrl = "https://afilio.com.br/"
+    assetsUrl = "https://www.afilio.com.br/"
 
 [params.posts]
     showAuthor = true
