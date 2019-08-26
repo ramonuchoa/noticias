@@ -18,15 +18,15 @@
                     {{ dateFormat $.Site.Params.posts.dateFormat .Date }}
                 </p>
 
-                <section class="postTags">
-                    {{ .Render "tags" }}
-                </section>
-
                 <picture class='heroImg'>
                     <img src='{{ $.Site.BaseURL }}images{{ .Params.image }}' alt='{{ .Title }}' />
                 </picture>
 
                 {{ .Content }}
+
+                <section class="postTags">
+                    {{ .Render "tags" }}
+                </section>
             </div>
         </article>
 
