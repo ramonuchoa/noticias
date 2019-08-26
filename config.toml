@@ -3,6 +3,7 @@ paginate = 12
 summaryLength = 7
 DefaultContentLanguage = "pt"
 title = "Notícias"
+disableKinds = ["taxonomyTerm", "taxonomy"]
 
 [params]
     assetsUrl = "https://www.afilio.com.br/"

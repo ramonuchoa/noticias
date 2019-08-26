@@ -32,6 +32,11 @@
 
 
         <aside class='relatedPosts' id='relatedPosts'>
+            <section class="ctaCadastro">
+                <h3>Afilie-se agora</h3>
+                <p>Fa&ccedil;a parte da maior rede de afilia&ccedil;&atilde;o da am&eacute;rica latina.</p>
+                <a href="{{ $.Site.Params.assetsUrl }}cadastro-afiliado.html">Cadastre-se agora</a>
+            </section>
             <h3>Posts relacionados</h3>
             {{ $related := .Site.RegularPages.Related . | first 2 }}
             {{ with $related }}
@@ -47,11 +52,6 @@
             {{ else }}
             <p>Nenhum post relacionado</p>
             {{ end }}
-            <section class="ctaCadastro">
-                <h3>Afilie-se agora</h3>
-                <p>Fa&ccedil;a parte da maior rede de afilia&ccedil;&atilde;o da am&eacute;rica latina.</p>
-                <a href="{{ $.Site.Params.assetsUrl }}cadastro-afiliado.html">Cadastre-se agora</a>
-            </section>
         </aside>
 
         <div class="postNavigation">
