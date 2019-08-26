@@ -9,27 +9,27 @@
 <section class="content mainSection postContent">
     <div class="contentWrapper">
         <article>
-            <picture class='heroImg'>
-                <img src='{{ $.Site.BaseURL }}images{{ .Params.image }}' alt='{{ .Title }}' />
-            </picture>
-
             <div class='postContentWrapper'>
                 <h1>{{ .Title }}</h1>
 
                 <h3 class='postDescription'>{{ .Description }}</h3>
 
-                <p class='postInfo'>
-                    <i class="fas fa-calendar-alt"></i>
-                    {{ dateFormat $.Site.Params.posts.dateFormat .Date }} por {{ $.Params.author }}.
+                <p class='publishDate'>
+                    {{ dateFormat $.Site.Params.posts.dateFormat .Date }}
                 </p>
+
+                <picture class='heroImg'>
+                    <img src='{{ $.Site.BaseURL }}images{{ .Params.image }}' alt='{{ .Title }}' />
+                </picture>
+
+                {{ .Content }}
 
                 <section class="postTags">
                     {{ .Render "tags" }}
                 </section>
-
-                {{ .Content }}
             </div>
         </article>
+
 
         <aside class='relatedPosts' id='relatedPosts'>
             <h3>Posts relacionados</h3>
@@ -40,22 +40,27 @@
             	<li class='relatedPostsListItem'>
                     <h4>{{ .Title }}</h4>
                     <p>{{ .Summary }}</p>
-                    <a href="{{ .RelPermalink }}">Leia mais</a>
+                    <a href="{{ .RelPermalink }}index.html">Leia mais</a>
                 </li>
             	{{ end }}
             </ul>
             {{ else }}
             <p>Nenhum post relacionado</p>
             {{ end }}
+            <section class="ctaCadastro">
+                <h3>Afilie-se agora</h3>
+                <p>Fa&ccedil;a parte da maior rede de afilia&ccedil;&atilde;o da am&eacute;rica latina.</p>
+                <a href="{{ $.Site.Params.assetsUrl }}cadastro-afiliado.html">Cadastre-se agora</a>
+            </section>
         </aside>
 
         <div class="postNavigation">
             {{ if .NextInSection }}
-            <a href="{{.NextInSection.Permalink}}" class='postNavigationLink'>&lt; Pr&oacute;ximo</a>
+            <a href="{{.NextInSection.Permalink}}index.html" class='postNavigationLink'>&lt; Pr&oacute;ximo</a>
             {{ end }}
-            <a href="{{ $.Site.BaseURL }}" class='postNavigationLink'>Voltar</a>
+            <a href="{{ $.Site.BaseURL }}index.html" class='postNavigationLink'>Voltar</a>
             {{ if .PrevInSection }}
-            <a href="{{.PrevInSection.Permalink}}" class='postNavigationLink'>Anterior &gt;</a>
+            <a href="{{.PrevInSection.Permalink}}index.html" class='postNavigationLink'>Anterior &gt;</a>
             {{ end }}
         </div>
     </div>

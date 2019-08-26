@@ -1,22 +1,22 @@
 <!-- Primary Navigation -->
 <nav id="primary-menu">
-    <ul>
-        <li><a href="http://teste.tag.vc/index.html">In&iacute;cio</a></li>
-        <li><a href="http://teste.tag.vc/afiliados.html">Afiliados</a></li>
-        <li><a href="http://teste.tag.vc/anunciantes-agencias.html">Anunciantes e Ag&ecirc;ncias</a></li>
-        <li><a href="http://teste.tag.vc/poder-da-afiliacao.html">O poder da afilia&ccedil;&atilde;o</a></li>
+    <ul id="topMenu">
+        <li><a href="{{ .Site.Params.assetsUrl }}index.html">In&iacute;cio</a></li>
+        <li><a href="{{ .Site.Params.assetsUrl }}afiliados.html">Afiliados</a></li>
+        <li><a href="{{ .Site.Params.assetsUrl }}anunciantes-agencias.html">Anunciantes e Ag&ecirc;ncias</a></li>
+        <li><a href="{{ .Site.Params.assetsUrl }}poder-da-afiliacao.html">O poder da afilia&ccedil;&atilde;o</a></li>
         <li>
             <a href='#' data-select='about-menu'>Sobre Afilio</a>
             <ul>
-                <li><a href="http://teste.tag.vc/sobre-afilio.html#nossahistoria">Nossa hist&oacute;ria</a></li>
-                <li><a href="http://teste.tag.vc/sobre-afilio.html#lideres">Nossos l&iacute;deres</a></li>
-                <li><a href="http://teste.tag.vc/sobre-afilio.html#cj">CJ | Commission Junction</a></li>
-                <li><a href="http://teste.tag.vc/sobre-afilio.html#instituto">Instituto Afilio</a></li>
-                <li><a href="http://teste.tag.vc/carreiras.html">Carreiras</a></li>
-                <li><a href="http://teste.tag.vc/cases.html">Cases</a></li>
+                <li><a href="{{ .Site.Params.assetsUrl }}sobre-afilio.html#nossahistoria">Nossa hist&oacute;ria</a></li>
+                <li><a href="{{ .Site.Params.assetsUrl }}sobre-afilio.html#lideres">Nossos l&iacute;deres</a></li>
+                <li><a href="{{ .Site.Params.assetsUrl }}sobre-afilio.html#cj">CJ | Commission Junction</a></li>
+                <li><a href="{{ .Site.Params.assetsUrl }}sobre-afilio.html#instituto">Instituto Afilio</a></li>
+                <li><a href="{{ .Site.Params.assetsUrl }}carreiras.html">Carreiras</a></li>
+                <li><a href="{{ .Site.Params.assetsUrl }}cases.html">Cases</a></li>
             </ul>
         </li>
-        <li><a href="{{ $.Site.BaseURL }}" class='marcador'>Not&iacute;cias</a></li>
+        <li><a href="{{ $.Site.BaseURL }}index.html" class='marcador'>Not&iacute;cias</a></li>
     </ul>
 </nav>
 <!-- primary-menu end -->

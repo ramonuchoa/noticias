@@ -1,12 +1,16 @@
 baseurl = "http://teste.tag.vc/noticias/"
-paginate = 6
+paginate = 12
 summaryLength = 7
 DefaultContentLanguage = "pt"
-
 title = "Notícias"
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params.posts]
     showAuthor = true
     showDate = true
     showTags = true
     dateFormat = "02/01/2006"
+
+
+[params]
+    assetsUrl = "http://teste.tag.vc/"

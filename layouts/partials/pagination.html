@@ -22,7 +22,7 @@
 <div class="postPagination">
     <!-- Previous page. -->
     {{ if $paginator.HasPrev }}
-        <a href="{{ $paginator.Prev.URL }}" class="pagination__link pagination__link--previous">
+        <a href="{{ $paginator.Prev.URL }}index.html" class="pagination__link pagination__link--previous">
             &lt; Recentes
         </a>
     {{ end }}
@@ -76,7 +76,7 @@
 
     <!-- Output page numbers. -->
     {{ if eq ($.Scratch.Get "page_number_flag") true }}
-        <a href="{{ .URL }}" class="pagination__link">
+        <a href="{{ .URL }}index.html" class="pagination__link">
             {{ .PageNumber }}
         </a>
     {{ end }}
@@ -85,7 +85,7 @@
 
     <!-- Next page. -->
     {{ if $paginator.HasNext }}
-        <a href="{{ $paginator.Next.URL }}" class="pagination__link pagination__link--next">
+        <a href="{{ $paginator.Next.URL }}index.html" class="pagination__link pagination__link--next">
             Antigos &gt;
         </a>
     {{ end }}
