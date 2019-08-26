@@ -5,12 +5,11 @@ DefaultContentLanguage = "pt"
 title = "Notícias"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
+[params]
+    assetsUrl = "https://afilio.com.br/"
+
 [params.posts]
     showAuthor = true
     showDate = true
     showTags = true
     dateFormat = "02/01/2006"
-
-
-[params]
-    assetsUrl = "https://afilio.com.br/"
