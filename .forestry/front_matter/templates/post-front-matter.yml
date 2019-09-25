@@ -11,40 +11,19 @@ fields:
 - type: datetime
   name: date
   label: date
-<<<<<<< HEAD
-  default: now
-- type: datetime
-  name: publishDate
-  label: publishDate
-  default: now
-- type: text
-  name: author
-  label: author
-  default: Afilio
-=======
 - type: datetime
   name: publishDate
   label: publishDate
 - type: text
   name: author
   label: author
->>>>>>> Update from Forestry.io - Updated Forestry configuration
 - type: file
   name: image
   label: image
 - type: list
   name: tags
   label: tags
-<<<<<<< HEAD
-pages:
-- content/posts/afiliado-saiba-como-criar-links-de-uma-página-específica-em-segundos.html
-- content/posts/afiliado-saiba-onde-encontrar-banners-cupons-links-de-texto-na-plataforma-afilio.html
-- content/posts/evento-cju-2019-ouse-pensar-grande.html
-- content/posts/afiliado-criando-link-trackeado-com-a-afilio.html
-- content/posts/seja-um-afiliado.html
-- content/posts/afiliado-aplicando-nas-campanhas-afilio.html
-- content/posts/como-melhorar-a-taxa-de-abandono-de-carrinho-de-compras.html
-- content/posts/video.html
-- content/posts/o-que-é-cpm-cpc-e-cpa.html
 =======
->>>>>>> Update from Forestry.io - Updated Forestry configuration
+- content/posts/confira-dicas-para-bombar-suas-vendas-na-black-friday-2019.html
+- content/posts/tend-ecirc-ncia-marketing-de-afiliados.html
+>>>>>>> Update from Forestry.io
