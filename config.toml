@@ -1,4 +1,4 @@
-baseurl = "http://teste.tag.vc/noticias/"
+baseurl = "https://www.afilio.com.br/noticias/"
 paginate = 12
 summaryLength = 7
 DefaultContentLanguage = "pt"
@@ -6,7 +6,7 @@ title = "Notícias"
 disableKinds = ["taxonomyTerm", "taxonomy"]
 
 [params]
-    assetsUrl = "http://teste.tag.vc/"
+    assetsUrl = "https://www.afilio.com.br/"
 
 [params.posts]
     showAuthor = true

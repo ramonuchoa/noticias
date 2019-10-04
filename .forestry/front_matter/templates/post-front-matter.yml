@@ -11,15 +11,12 @@ fields:
 - type: datetime
   name: date
   label: date
-  default: now
 - type: datetime
   name: publishDate
   label: publishDate
-  default: now
 - type: text
   name: author
   label: author
-  default: Afilio
 - type: file
   name: image
   label: image
