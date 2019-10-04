@@ -13,3 +13,6 @@ disableKinds = ["taxonomyTerm", "taxonomy"]
     showDate = true
     showTags = true
     dateFormat = "02/01/2006"
+
+
+    
