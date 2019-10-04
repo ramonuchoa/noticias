@@ -1,4 +1,4 @@
-baseurl = "https://www.afilio.com.br/noticias/"
+baseurl = "http://localhost:8000/noticias/"
 paginate = 12
 summaryLength = 7
 DefaultContentLanguage = "pt"
@@ -6,7 +6,7 @@ title = "Notícias"
 disableKinds = ["taxonomyTerm", "taxonomy"]
 
 [params]
-    assetsUrl = "https://www.afilio.com.br/"
+    assetsUrl = "http://localhost:8000/"
 
 [params.posts]
     showAuthor = true
