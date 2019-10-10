@@ -2,7 +2,13 @@
 <nav id="primary-menu">
     <ul id="topMenu">
         <li><a href="{{ .Site.Params.assetsUrl }}index.html">In&iacute;cio</a></li>
-        <li><a href="{{ .Site.Params.assetsUrl }}afiliados.html">Afiliados</a></li>
+        <li>
+            <a href='#' data-select='about-menu'>Afiliados</a>
+            <ul>
+                <li><a href="{{ .Site.Params.assetsUrl }}afiliados.html">Seja um afiliado</a></li>
+                <li><a href="{{ .Site.Params.assetsUrl }}afiliados.html#tutoriais">Tutoriais</a></li>
+            </ul>
+        </li>
         <li><a href="{{ .Site.Params.assetsUrl }}anunciantes-agencias.html">Anunciantes e Ag&ecirc;ncias</a></li>
         <li><a href="{{ .Site.Params.assetsUrl }}poder-da-afiliacao.html">O poder da afilia&ccedil;&atilde;o</a></li>
         <li>
