@@ -1,0 +1,15 @@
+baseurl = "http://localhost:8000/noticias/"
+paginate = 12
+summaryLength = 7
+DefaultContentLanguage = "pt"
+title = "Notícias"
+disableKinds = ["taxonomyTerm", "taxonomy"]
+
+[params]
+    assetsUrl = "http://localhost:8000/"
+
+[params.posts]
+    showAuthor = true
+    showDate = true
+    showTags = true
+    dateFormat = "02/01/2006"
